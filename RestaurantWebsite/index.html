@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Backyard Bowls</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="tabs.css">
+</head>
+<style>
+<body>
+
+	.box{ width: 900px;
+        float:right;
+        border:2px solid grey;}
+        
+        .box ul li{
+            width: 150px;
+            float:right;
+            margin: 20px auto;
+            text-align: center;
+        }
+        
+        .box ul li a{ text-decoration: none;
+        color:LightGrey;}
+        
+        .box ul li:hover{ background-color: Brown;}
+        .box ul li a:hover{ color:white;}
+        
+        .wd{
+            width: 300px;
+            height: 539px;
+            background-color: black;
+            opacity: 0.9;
+            padding: 10px;
+        }
+        
+        .wd h1{
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 100px;
+        }
+        
+        .wd h4{
+            text-align: justify;
+            color:darkgray;
+            font-weight: normal;
+        }
+    
+        .wd h2{
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: normal;
+            margin: 40px auto;
+        }
+        
+        .opt form , input[type="button"]{
+            background-color: black;
+            color:white;
+            padding:10px;
+            margin:-14px auto;
+            padding-left: 100px;
+            padding-right: 50px;
+            text-align: center;
+        }
+        
+        form, input[type="button"]{ background-color: #e0900d; color: Black; align:"center";}:hover{background-color: none;}
+    </style>
+
+    <div class="box">
+    <ul type="none">
+        <li><a href="#restaurant-info"> Contact</a></li>
+	<li><a href="#menu"> Menu</a></li>
+        <li><a href="#order"> Place Order</a></li>
+        <li><a href=""> Home </a></li>
+        </ul>
+    </div>
+
+
+
+
+    <main>
+        <section id="landing-page">
+            <div class="nav-slider">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <header class="title-background"><br>
+                <h2 class="title">Backyard</h2>
+		<h2 class="title">Bowls</h2>
+            </header>
+        </section>
+        <section class="nav-slider-section">
+            <button class="close-nav-slider">X</button>
+            <section class="nav-links-container">
+                <ul>
+                    <li><a class="nav-links" href="#menu">Menu</a></li>
+                    <li><a class="nav-links" href="#restaurant-info">Restaurant Information</a></li>
+ 		    <li><a class="nav-links" href="#contact">Contact Information</a></li>
+		    <li><a class="nav-links" href="#order">Book Order</a></li>
+                </ul>
+            </section>
+        </section>
+
+        <section id="menu">
+            <h2 class="menu-title">Menu</h2>
+            <section class="tabs-container">
+                <section class="tabs">
+                    <button class="tabHeader active-tab" data-tab="1">Breakfast</button>
+                    <button class="tabHeader" data-tab="2">Lunch</button>
+                    <button class="tabHeader" data-tab="3">Dinner</button>
+                    <button class="tabHeader" data-tab="4">Deserts</button>
+	            <button class="tabHeader" data-tab="5">Drinks</button>
+		    <button class="tabHeader" data-tab="6">Extras</button>
+                </section>
+
+                <section id="tabSection-1" class="tabSection show-tab">
+                    <p>1. Banana Smothie <span class="menu-price"> ₹40.00</span></p>
+                    <p>2. Sandwitches (choose your toppings and ingredients) <span class="menu-price"> ₹80.00</span></p>
+                    <p>3. Poha rice <span class="menu-price"> ₹70.00</span></p>
+                    <p>4. White sauce pasta <span class="menu-price"> ₹60.00</span></p>
+                </section>
+                <section id="tabSection-2" class="tabSection hide-tab">
+                    <p>1. Martini Pasta<span class="menu-price">₹100.00</span></p>
+                    <p>2. Momos <span class="menu-price">₹80.00</span></p>
+                    <p>3. Cocktail with pancakes<span class="menu-price">₹79.00</span></p>
+                    <p>4. Icecream Waffels and Maple Soup <span class="menu-price">₹150.00</span></p>
+                </section>
+                <section id="tabSection-3" class="tabSection hide-tab">
+                    <p>1. Calamari<span class="menu-price">₹10.00</span></p>
+                    <p>2. Indian cuisine plate<span class="menu-price">₹100.00</span></p>
+                    <p>3. Rasam<span class="menu-price">₹70.00</span></p>
+                    <p>4. Miso Soup<span class="menu-price">₹60.00</span></p>
+                </section>
+                <section id="tabSection-4" class="tabSection hide-tab">
+                    <p>1. Brownie Sunday<span class="menu-price">₹100.00</span></p>
+                    <p>2. Cheesecake<span class="menu-price">₹80.00</span></p>
+		    <p>1. Red Velvet cake<span class="menu-price">₹150.00</span></p>
+                    <p>2. Coconut pancakes<span class="menu-price">₹120.00</span></p>
+                </section>
+		<section id="tabSection-5" class="tabSection hide-tab">
+                    <p>1. Rassam (1+1)<span class="menu-price">₹100.00</span></p>
+                    <p>2. Vegetable soup<span class="menu-price">₹80.00</span></p>
+                    <p>3. Tomato soup<span class="menu-price">₹70.00</span></p>
+                    <p>4. Lemonade with Soda<span class="menu-price">₹60.00</span></p>
+                </section>
+		<section id="tabSection-6" class="tabSection hide-tab">
+                    <p>1. Calamari<span class="menu-price">₹10.00</span></p>
+                    <p>2. Edamame<span class="menu-price">₹8.00</span></p>
+                    <p>3. Gyoza<span class="menu-price">₹7.00</span></p>
+                    <p>4. Miso Soup<span class="menu-price">₹6.00</span></p>
+                </section>
+            </section>
+        </section>
+
+        <section id="restaurant-info">
+            <section class="info-container">
+                <section class="address-content">
+                    <h2 class="restaurant-info-title">Address</h2>
+                    <p class="address"> Marg 23g</p>
+		    <p class="address">Shastri Park</p>
+                    <p class="address">New Delhi</p>
+                    <p class="address">New Delhi, India</p>
+                </section>
+                <section class="business-hours">
+                    <h2 class="restaurant-info-title">Business Hours</h2>
+                    <p class="hours">Monday-Friday: 9am-9pm</p>
+                    <p class="hours">Saturday-Sunday: 11am-11pm</p>
+                </section>
+                <section class="contact-content">
+                    <h2 class="restaurant-info-title">Contact</h2>
+                    <p class="phone">Call Us: 9945698745</p><br>
+ 		    <h2 class="restaurant-info-title">Celebrations</h2>
+                    <p class="phone">Call Us: 125634</p>		     						
+                </section>
+            </section>
+            <section class="contact-content">
+                    <h2 class="restaurant-info-title">Place Order</h2>
+		<div><center>
+                    <form action="">
+  		    	<label for="email">Enter your email:</label>
+			<input type="email" id="email" name="email"><br><br>
+                    	<label for="lname">Your Order:</label><br>
+                    	<input type="text" id="order" name="order"><br><br>
+                    	<input type="submit" value="Submit">
+                    </form>
+		</center></div>		     						
+            </section>
+	    <section class="business-hours">
+                    <p align="center">All Rights Reserved. &copy; 2020 | Made by Shagun</p>
+            </section>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+    <script src="tabs.js"></script>
+</body>
+</html>
